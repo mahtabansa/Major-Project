@@ -15,8 +15,8 @@ const Home = () => {
   const navigate = useNavigate();
   const handleDelete = async (id) => {
     try {
-      const item = await axios.post(`${import.meta.env.VITE_API_URL}/api/items/delete-item/${id}`, {}, { withCredentials: true });
-      console.log("items deleted", item)
+      const item = await axios.post(`https://major-project-1-backend.onrender.com/api/items/delete-item/${id}`, {}, { withCredentials: true });
+      
     } catch (err) {
       console.log("error occuring while deleting item", err)
     }
