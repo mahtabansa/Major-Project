@@ -8,13 +8,8 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 function Register() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    password: "",
-    address: "",
-    role: "customer"
+  const [formData, setFormData] = useState({name: "",email: "", phone: "",password: "",address: ""
+    ,role: "customer"
   });
 
   const handleChange = (e) => {
@@ -76,21 +71,13 @@ function Register() {
 
         <input
           className="border border-gray-300 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          type="email"
-          name="email"
-          placeholder="Enter email"
-          value={formData.email}
-          onChange={handleChange}
+          type="email" name="email" placeholder="Enter email" value={formData.email}onChange={handleChange}
           required
         />
 
         <input
           className="border border-gray-300 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          type="number"
-          name="phone"
-          placeholder="Enter phone"
-          value={formData.phone}
-          onChange={handleChange}
+          type="number" name="phone" placeholder="Enter phone" value={formData.phone} onChange={handleChange}
           required
         />
 

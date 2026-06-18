@@ -9,7 +9,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-// ✅ upload function
+
 const uploadOnCloudinary = async (filePath) => {
   try {
     if (!filePath) return null;
@@ -20,7 +20,6 @@ const uploadOnCloudinary = async (filePath) => {
       folder: "shops",
     });
 
-    // ✅ upload success
     if (result?.secure_url) {
       console.log("Upload successful:", result.secure_url);
 

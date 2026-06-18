@@ -8,5 +8,5 @@ const upload = multer({dest:'./public'});
 export const itemRouter = express.Router();
 itemRouter.post("/add-phone", authmiddleware, upload.single("image"), AddItem);
 itemRouter.get("/get-items", authmiddleware, GetAllItems);
-// itemRouter.post("/edit-item/:id", authmiddleware, upload.single("image"), EditItem);
+itemRouter.post("/edit-item/:id", authmiddleware, upload.single("image"), EditItem);
 itemRouter.post("/delete-item/:id", authmiddleware, DeleteItem);
