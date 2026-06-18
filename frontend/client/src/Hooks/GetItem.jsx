@@ -11,7 +11,7 @@ export const GetItem = async () => {
       useEffect(() => {
             const fetchSellerItems = async () => {
                   try {
-                        const items = await axios.get(`${api_url}/api/items/get-items`, { withCredentials: true });
+                        const items = await axios.get(`https://major-project-1-backend.onrender.com/api/items/get-items`, { withCredentials: true });
                         dispatch(setItems(items?.data?.items))
                   } catch (error) {
                         console.error("Error fetching current user:", error);
