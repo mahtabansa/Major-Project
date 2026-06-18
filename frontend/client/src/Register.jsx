@@ -22,12 +22,12 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("formdta", formData);
-    const api_url = import.meta.env.VITE_API_URL;
+    const api_url = import.meta.env.VITE_API_URL || "https://major-project-1-backend.onrender.com";
      console.log("api url", api_url);
     try {
 
       const response = await axios.post(
-        `http://localhost:3000/api/users/register`,
+        `${api_url}/api/users/register`,
         formData
       );
 
