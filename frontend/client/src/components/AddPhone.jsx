@@ -62,7 +62,7 @@ function AddPhone() {
                   console.log("FormData:", data);
 
                   const response = await axios.post(
-                        "http://localhost:3000/api/items/add-phone",
+                        `https://major-project-1-backend.onrender.com/api/items/add-phone`,
                         data,
                         {
 
