@@ -27,7 +27,7 @@ function Register() {
     try {
 
       const response = await axios.post(
-        `${api_url}/api/users/register`,
+        `https://major-project-1-backend.onrender.com/api/users/register`,
         formData
       );
 
