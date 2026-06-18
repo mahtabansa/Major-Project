@@ -12,7 +12,7 @@ const GetCurrentUser = () => {
 
       try {
         const response = await axios.get(
-          `${api_url}/api/users/getUser`,
+          `https://major-project-1-backend.onrender.com/api/users/getUser`,
           {
             withCredentials: true,
           }
